@@ -73,3 +73,5 @@ Necessary Packages
 react-router-dom
 react-redux
 @reduxjs/toolkit
+@emotion/styled
+@emotion/react

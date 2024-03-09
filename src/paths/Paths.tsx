@@ -19,7 +19,7 @@ const Paths = () => {
                 element={<Home />}
             />
             <Route
-                path='/tickets'
+                path='/upcoming-events'
                 element={<div>Buy your tickets here</div>}
             />
         </Routes>

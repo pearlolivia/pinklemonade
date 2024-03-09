@@ -1,12 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Suspense } from 'react';
 import Paths from './paths/Paths.tsx';
+import LoadingSpinner from './components/Loading/LoadingSpinner.tsx';
 
 function App() {
   return (
-    <div className="App">
-      <Paths />
-    </div>
+    <Suspense fallback={<LoadingSpinner />}>
+      <div className="App">
+        <Paths />
+      </div>
+    </Suspense>
   );
 }
 
