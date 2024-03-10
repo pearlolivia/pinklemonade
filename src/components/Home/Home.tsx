@@ -1,9 +1,11 @@
 import React from 'react';
+import AppWrapper from '../AppWrapper/AppWrapper.tsx';
 import Header from './Header/Header.tsx';
 import { Title, Paragraph } from './styles.ts';
+import background from '../../assets/images/forge_background.jpg';
 
 const Home = () => (
-    <>
+    <AppWrapper background={background}>
         <Header />
         <div>
             <Title>Welcome to the Pink Lemonade Website</Title>
@@ -18,7 +20,7 @@ const Home = () => (
                 and brings people together. You can only understand if you try it for yourself! Will you join us on this journey?
             </Paragraph>
         </div>
-    </>
+    </AppWrapper>
 );
 
 export default Home;
