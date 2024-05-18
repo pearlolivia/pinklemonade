@@ -15,6 +15,8 @@ export const Option = styled('div')(
         border: '2px solid #000000',
         padding: '20px 40px',
         borderRadius: '40px',
+        textWrap: 'nowrap',
+        cursor: 'pointer',
     })
 );
 
@@ -22,10 +24,11 @@ export const Logo = styled('img')(
     css({
         width: '200px',
         padding: '16px',
+        background: 'none'
     })
 );
 
 export const HeaderItems = styled.div`
     display: flex;
-    gap: 40px;
+    gap: 2rem;
 `;

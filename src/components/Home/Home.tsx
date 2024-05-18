@@ -1,14 +1,11 @@
 import React from 'react';
 import AppWrapper from '../AppWrapper/AppWrapper.tsx';
-import Header from './Header/Header.tsx';
-import { Title, Paragraph } from './styles.ts';
-import background from '../../assets/images/forge_background.jpg';
+import { Paragraph } from './Home.styles.ts';
 
 const Home = () => (
-    <AppWrapper background={background}>
-        <Header />
+    <AppWrapper>
         <div>
-            <Title>Welcome to the Pink Lemonade Website</Title>
+            {/* <Title>Welcome to the Pink Lemonade Website</Title> */}
             <Paragraph>We are a non-profit pop up roller disco based in Sheffield, South Yorkshire.
                 Our goal is to nurture the local roller skating community and create our own culture that is 
                 inclusive, unique and nothing but fun. We work with local creative talent to cultivate the best possible 
