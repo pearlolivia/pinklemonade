@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Option, HeaderItems, HeaderWrapper, Logo } from "./Header.styles.ts";
 import { urls } from "../../consts/urls.ts";
 import logo from '../../assets/images/logo_transparent.png';
@@ -33,6 +33,8 @@ const headerItems = [
 
 const Header = () => {
     const navigate = useNavigate();
+    const location = useLocation();
+
     return (
         <HeaderWrapper>
             <Logo
@@ -42,7 +44,10 @@ const Header = () => {
             />
             <HeaderItems>
                 {headerItems.map(item => (
-                    <Option onClick={() => navigate(item.url)}>
+                    <Option
+                        selected={location.pathname === item.url}
+                        onClick={() => navigate(item.url)}
+                    >
                         {item.name}
                     </Option>
                 ))}
