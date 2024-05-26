@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "types": ["vite/client", "node"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "lib": ["esnext", "dom", "dom.iterable"],
+        "jsx": "react-jsx",
+    },
+    "include": ["src/index.tsx", "src/*.d.ts", "src/**/*"]
+}

@@ -1,8 +1,11 @@
 import styled from "@emotion/styled";
-import { css } from "@emotion/react";
 import { brandColours } from "../../consts/generalConsts";
 
-export const BasicButton = styled.div`
+interface Props {
+    style?: React.CSSProperties;
+}
+
+export const BasicButton = styled.div<Props>`
     padding: 20px 60px;
     background: #FFFFFF;
     border-radius: 16px;
@@ -11,4 +14,8 @@ export const BasicButton = styled.div`
     &:hover {
         background: ${brandColours.pink}
     }
+
+    ${({ style }) => ({
+		...style,
+	})}
 `;

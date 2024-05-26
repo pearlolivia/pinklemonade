@@ -1,8 +1,14 @@
 import React from "react";
 import { BasicButton } from "./Button.styles";
 
-const Button = ({ children, onClick }) => (
-    <BasicButton onClick={onClick}>{children}</BasicButton>
+interface Props {
+    children: any;
+    onClick: () => any;
+    style?: React.CSSProperties;
+}
+
+const Button = ({ children, onClick, style }: Props) => (
+    <BasicButton onClick={onClick} style={style} >{children}</BasicButton>
 );
 
 export default Button;

@@ -1,6 +1,13 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-export default defineConfig({
-  plugins: [react()]
+export default defineConfig(({mode }) => {
+  return {
+    plugins: [react()],
+    define: {
+      'process.env': {
+        MAILERSEND_API_KEY: 'mlsn.a78347aa85ac2c0bc227f7a387b1319383a637f7942fe75d6bdcb2208fcabf7f',
+      }
+    }
+  };
 });

@@ -18,6 +18,9 @@ export const ReviewWriterWrapper = styled('div')(
         display: 'flex',
         justifyContent: 'center',
         gap: '3rem',
+        padding: '1rem',
+        background: 'rgba(255, 255, 255, 0.2)',
+        borderRadius: '8px',
     })
 );
 
@@ -48,6 +51,15 @@ export const ReviewInput = styled('textarea')(
         height: '12rem',
         background: 'rgba(255, 255, 255, 0.5)',
     })
+);
+
+export const SubmitWrapper = styled('div')(
+    {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        gap: '1rem',
+    }
 );
 
 export const StarWrapper = styled('div')(

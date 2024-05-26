@@ -16,22 +16,27 @@ import {
     TopBar,
     Reviewer,
     Star,
+    SubmitWrapper,
 } from "./Reviews.styles";
 import star from '../../assets/images/star.png';
 import { dummyData } from "./dummyData";
 
 const Reviews = () => {
     const [name, setName] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
     const [eventDate, setEventDate] = useState<string>('');
     const [review, setReview] = useState<string>('');
+    const [feedback, setFeedback] = useState<string>('');
     const [rating, setRating] = useState<number>(5);
     const [showThankYou, setShowThankYou] = useState<boolean>(false);
 
     const handleSubmit = () => {
         const payload = {
             name,
+            email,
             eventDate,
             review,
+            feedback,
             rating,
             approved: 0,
             date: (new Date()).toISOString().split('T')[0],
@@ -58,6 +63,10 @@ const Reviews = () => {
                                 placeholder="Name"
                                 onChange={(e) => setName(e.target.value)}
                             />
+                            <NameInput
+                                placeholder="Email"
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
                             <div>
                                 <label>Date of event: </label>
                                 <DateInput
@@ -69,8 +78,12 @@ const Reviews = () => {
                                 placeholder="What did you think? Venue, Music, Vibes, Price?"
                                 onChange={(e) => setReview(e.target.value)}
                             />
+                            <ReviewInput
+                                placeholder="What kind of things do you want to see from us in future? Themes, classes, drinks?"
+                                onChange={(e) => setFeedback(e.target.value)}
+                            />
                         </ReviewWriter>
-                        <div>
+                        <SubmitWrapper>
                             <StarWrapper>
                                 <img
                                     src={star}
@@ -103,9 +116,8 @@ const Reviews = () => {
                                 />
                             </StarWrapper>
                             <StarCounter>{rating} / 5</StarCounter>
-                            <div style={{ height: '28%' }} />
                             <Button onClick={() => handleSubmit()}>Submit</Button>
-                        </div>
+                        </SubmitWrapper>
                     </ReviewWriterWrapper>
                 </>
             )}

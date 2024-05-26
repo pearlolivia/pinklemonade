@@ -30,7 +30,6 @@ export const Logo = styled('img')(
     css({
         width: '200px',
         padding: '16px',
-        background: 'none'
     })
 );
 
