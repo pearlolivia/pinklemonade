@@ -3,7 +3,7 @@ export const dummyData = {
     reviews: [
         {
             id: 1,
-            name: 'Pearl',
+            reviewer: 'Pearl',
             eventDate: '2024-05-31',
             review: 'Smashed it out the park, no faults.',
             rating: 5,
@@ -12,7 +12,7 @@ export const dummyData = {
         },
         {
             id: 2,
-            name: 'Dani',
+            reviewer: 'Dani',
             eventDate: '2024-05-31',
             review: 'Smashed it out the park, no faults.bvfbinscr egWGFC GRGHWIjb UFBEABFJR DERFIBBVI   BO FEFAFHYU W YDEUYWFVV ffvshfvfiqerbf',
             rating: 5,
@@ -21,7 +21,7 @@ export const dummyData = {
         },
         {
             id: 3,
-            name: 'Becky',
+            reviewer: 'Becky',
             eventDate: '2024-05-31',
             review: 'Smashed it out the park, no faults.',
             rating: 5,

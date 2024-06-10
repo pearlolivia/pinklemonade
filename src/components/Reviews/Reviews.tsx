@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AppWrapper from "../AppWrapper/AppWrapper";
 import Button from "../../common/Button/Button";
 import {
@@ -32,17 +32,25 @@ const Reviews = () => {
 
     const handleSubmit = () => {
         const payload = {
-            name,
+            reviewer: name,
             email,
             eventDate,
             review,
             feedback,
             rating,
-            approved: 0,
             date: (new Date()).toISOString().split('T')[0],
         }
-        console.log(payload);
-        setShowThankYou(true);
+
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+        };
+
+        fetch("http://localhost:9000/reviews", requestOptions)
+            .then(res => res.json())
+            .then(() => setShowThankYou(true))
+            .catch(err => console.log(err));
     }
 
     const ThankYou = () => (
@@ -50,6 +58,20 @@ const Reviews = () => {
             Thank you for your feedback, {name}!
         </StarCounter>
     );
+
+    useEffect(() => {
+        const requestOptions = {
+            method: "GET",
+            headers: {
+              Accept: "application/json",
+              Authorization: "Basic *********",
+              "Access-Control-Allow-Origin": "*"
+            }
+          };
+        fetch("http://localhost:9000/reviews", requestOptions)
+            .then(res => console.log(res))
+            .catch(err => console.log(err));
+    }, []);
 
     return (
     <AppWrapper>
@@ -131,7 +153,7 @@ const Reviews = () => {
                                     />
                                     <div><b>{review.rating}</b> / 5</div>
                                     <Reviewer>
-                                        <span>{review.name}</span>
+                                        <span>{review.reviewer}</span>
                                         <span>{review.date.split("-").reverse().join("/")}</span>
                                     </Reviewer>
                                 </TopBar>
