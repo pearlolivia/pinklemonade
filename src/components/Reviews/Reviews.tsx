@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AppWrapper from "../AppWrapper/AppWrapper";
 import Button from "../../common/Button/Button";
+import { ReviewProps } from "./Reviews.helpers";
 import {
     ReviewsWrapper,
     ReviewWriter,
@@ -19,7 +20,6 @@ import {
     SubmitWrapper,
 } from "./Reviews.styles";
 import star from '../../assets/images/star.png';
-import { dummyData } from "./dummyData";
 
 const Reviews = () => {
     const [name, setName] = useState<string>('');
@@ -29,6 +29,7 @@ const Reviews = () => {
     const [feedback, setFeedback] = useState<string>('');
     const [rating, setRating] = useState<number>(5);
     const [showThankYou, setShowThankYou] = useState<boolean>(false);
+    const [reviewData, setReviewData] = useState<ReviewProps[]>();
 
     const handleSubmit = () => {
         const payload = {
@@ -60,16 +61,10 @@ const Reviews = () => {
     );
 
     useEffect(() => {
-        const requestOptions = {
-            method: "GET",
-            headers: {
-              Accept: "application/json",
-              Authorization: "Basic *********",
-              "Access-Control-Allow-Origin": "*"
-            }
-          };
-        fetch("http://localhost:9000/reviews", requestOptions)
-            .then(res => console.log(res))
+        fetch("http://localhost:9000/reviews/get-all")
+            .then(res => res.json()
+                .then(data => setReviewData(data)
+            ))
             .catch(err => console.log(err));
     }, []);
 
@@ -143,26 +138,26 @@ const Reviews = () => {
                     </ReviewWriterWrapper>
                 </>
             )}
-            <ReviewGrid>
-                        {dummyData.reviews.map(review => (
-                            <ReviewBox>
-                                <TopBar>
-                                    <Star
-                                        src={star}
-                                        alt='star'
-                                    />
-                                    <div><b>{review.rating}</b> / 5</div>
-                                    <Reviewer>
-                                        <span>{review.reviewer}</span>
-                                        <span>{review.date.split("-").reverse().join("/")}</span>
-                                    </Reviewer>
-                                </TopBar>
-                                <div>
-                                    {review.review}
-                                </div>
-                            </ReviewBox>
-                        ))}
-                    </ReviewGrid>
+            {reviewData && (<ReviewGrid>
+                {reviewData.map(review => (
+                    <ReviewBox>
+                        <TopBar>
+                            <Star
+                                src={star}
+                                alt='star'
+                            />
+                            <div><b>{review.rating}</b> / 5</div>
+                            <Reviewer>
+                                <span>{review.reviewer}</span>
+                                <span>{review.date.split("-").reverse().join("/")}</span>
+                            </Reviewer>
+                        </TopBar>
+                        <div>
+                            {review.review}
+                        </div>
+                    </ReviewBox>
+                ))}
+            </ReviewGrid>)}
         </ReviewsWrapper>
     </AppWrapper>
 )};
