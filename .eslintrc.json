@@ -1,0 +1,112 @@
+{
+    "extends": "react-app",
+    "ignorePatterns": [
+		".githooks",
+		".github",
+		"node_modules",
+		"build",
+		"dist",
+		"public",
+		"coverage"
+	],
+	"root": true,
+	"env": { "browser": true, "es2022": true },
+	"rules": {
+		"arrow-body-style": [2, "as-needed"],
+		"consistent-return": 0,
+		"func-names": ["error", "as-needed"],
+		"import/extensions": 0,
+		"import/no-extraneous-dependencies": 0,
+		"import/prefer-default-export": 0,
+		"jsx-a11y/accessible-emoji": 0,
+		"jsx-a11y/anchor-is-valid": [
+			"warn",
+			{
+				"aspects": ["invalidHref"],
+			},
+		],
+		"jsx-a11y/href-no-hash": "off",
+		"jsx-a11y/label-has-associated-control": 1,
+		"jsx-a11y/label-has-for": 0,
+		"no-alert": "error",
+		"no-console": [
+			"error",
+			{
+				"allow": ["info", "warn", "error"],
+			},
+		],
+		"no-debugger": "error",
+		"no-param-reassign": [
+			2,
+			{
+				"props": false,
+			},
+		],
+		"no-plusplus": [
+			"error",
+			{
+				"allowForLoopAfterthoughts": true,
+			},
+		],
+		"no-restricted-exports": 0,
+		"no-shadow": [
+			2,
+			{
+				"hoist": "all",
+				"allow": ["resolve", "reject", "done", "next", "err", "error"],
+			},
+		],
+		"no-unused-expressions": [
+			2,
+			{
+				"allowShortCircuit": true,
+				"allowTernary": true,
+				"allowTaggedTemplates": true,
+			},
+		],
+		"prefer-const": [
+			"error",
+			{
+				"destructuring": "all",
+			},
+		],
+		"radix": 0,
+		"react-hooks/rules-of-hooks": "error",
+		"react-refresh/only-export-components": "error",
+		"react/display-name": 1,
+		"react/forbid-prop-types": 0,
+		"react/function-component-definition": [
+			2,
+			{
+				"namedComponents": "arrow-function",
+				"unnamedComponents": "arrow-function",
+			},
+		],
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [".js", ".jsx", ".ts", ".tsx"],
+			},
+		],
+		"react/jsx-props-no-spreading": 0,
+		"react/jsx-no-bind": [
+			"warn",
+			{
+				"ignoreDOMComponents": false,
+				"ignoreRefs": false,
+				"allowArrowFunctions": false,
+				"allowFunctions": false,
+				"allowBind": false,
+			},
+		],
+		"react/no-array-index-key": 0,
+		"react/no-unescaped-entities": 0,
+		"react/no-unknown-property": ["error", { "ignore": ["css"] }],
+		"react/prefer-stateless-function": 1,
+		"react/prop-types": 2,
+		"react/react-in-jsx-scope": 0,
+		"react/require-default-props": 0,
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error",
+	},
+}

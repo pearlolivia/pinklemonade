@@ -1,5 +1,5 @@
 export interface ReviewProps {
-    approved: number;
+        approved: number;
     date: string;
     email?: string;
     eventDate: string;
