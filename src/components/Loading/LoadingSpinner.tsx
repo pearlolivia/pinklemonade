@@ -1,4 +1,3 @@
-import React from 'react';
 import { CircularProgress } from '@mui/material';
 import { motion } from 'framer-motion';
 import { SpinnerWrapper } from './LoadingSpinner.styles.ts';

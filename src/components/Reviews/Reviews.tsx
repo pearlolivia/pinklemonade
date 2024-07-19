@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import AppWrapper from "../AppWrapper/AppWrapper";
 import Button from "../../common/Button/Button";
 import { ReviewProps } from "./Reviews.helpers";

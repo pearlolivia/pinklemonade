@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from '../../common/Header/Header.tsx';
 import { Wrapper } from './AppWrapper.styles.ts';
 import background from '../../assets/images/forge_background.jpg';

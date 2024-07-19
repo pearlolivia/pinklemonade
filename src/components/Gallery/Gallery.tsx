@@ -1,4 +1,3 @@
-import React from "react";
 import AppWrapper from "../AppWrapper/AppWrapper";
 import { Grid, Photo } from "./Gallery.styles";
 import { galleryImages } from "./consts/consts";

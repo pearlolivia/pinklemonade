@@ -1,4 +1,3 @@
-import React from 'react';
 import AppWrapper from '../AppWrapper/AppWrapper.tsx';
 import {
     Paragraph,
