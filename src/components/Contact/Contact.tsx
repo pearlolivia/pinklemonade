@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import AppWrapper from "../AppWrapper/AppWrapper";
 import { BugInput, ContactWrapper, Text } from "./Contact.styles";
 import Button from "../../common/Button/Button";
