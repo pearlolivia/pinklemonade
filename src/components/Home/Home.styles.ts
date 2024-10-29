@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
+import { brandColours } from "../../consts/generalConsts";
 
 export const Title = styled('h1')(
     css({
@@ -10,38 +11,19 @@ export const Title = styled('h1')(
 
 export const Paragraph = styled('p')(
     css({
-        textAlign: 'center',
-        padding: '0 1rem',
+        textAlign: 'end',
+        paddingLeft: '4rem',
+        fontSize: '2.6rem',
     })
 );
 
-export const SliderWrapper = styled('div')(
+export const Option = styled('div')(
     {
-        width: '70%',
-        position: 'relative',
-        left: '50%',
-        transform: 'translateX(-50%)',
-    }
-);
-
-export const InfoWrapper = styled('div')(
-    {
-        display: 'flex',
-        paddingBottom: '0.5rem',
-    }
-);
-
-export const Caption = styled('div')(
-    {
-        width: '70%',
-        paddingLeft: '0.5rem',
-    }
-);
-
-export const LocationAndDate = styled('div')(
-    {
-        width: '30%',
-        textAlign: 'end',
-        paddingLeft: '0.5rem',
+        border: '2px solid #000000',
+        padding: '20px 40px',
+        borderRadius: '40px',
+        textWrap: 'nowrap',
+        cursor: 'pointer',
+        backgroundColor: brandColours.cream,
     }
 );

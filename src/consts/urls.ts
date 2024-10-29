@@ -4,5 +4,5 @@ export const urls = {
     gallery: '/gallery',
     merch: '/merchandise',
     reviews: '/reviews',
-    tickets: '/tickets'
+    tickets: 'https://www.skiddle.com/whats-on/Sheffield/Crookes-Social-Club/Pink-Lemonade-Roller-Disco/39233781/'
 };
