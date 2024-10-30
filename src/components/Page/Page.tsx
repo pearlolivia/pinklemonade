@@ -1,17 +1,19 @@
 import { Wrapper } from "./Page.styles";
 import logo from '../../assets/images/logo_transparent.png';
 import { useNavigate } from "react-router-dom";
+import { Ref } from "react";
 
 interface PageProps {
     children: any;
     backgroundColor: string;
     title: string;
+    scrollUpRef: any;
 }
 
-const Page = ({ children, backgroundColor, title }: PageProps) => {
-    const scrollToTop = () => {
-        document.getElementById("scroller").scroll(0,0)
-      }
+const Page = ({ children, backgroundColor, title, scrollUpRef }: PageProps) => {
+    const handleScrollUp = () => {
+        scrollUpRef.current.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
     <Wrapper style={{
@@ -20,7 +22,7 @@ const Page = ({ children, backgroundColor, title }: PageProps) => {
         <div style={{
             display: 'flex',
             justifyContent: 'space-between',
-            padding: '2rem',
+            padding: '1rem 2rem',
         }}>
             <h1 style={{
                 fontSize: '5rem',
@@ -30,14 +32,21 @@ const Page = ({ children, backgroundColor, title }: PageProps) => {
             <img
                 src={logo}
                 alt={logo}
-                onClick={scrollToTop}
+                onClick={handleScrollUp}
                 style={{
                     width: '200px',
-                    height: 'fit-content'
+                    height: 'fit-content',
+                    cursor: 'pointer'
                 }}
             />
         </div>
-        {children}
+        <div style={{
+            height: 'calc(100vh - 202px)',
+            display: 'flex',
+            alignItems: 'center'
+        }}>
+            {children}
+        </div>
     </Wrapper>
 )};
 

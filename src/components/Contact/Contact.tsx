@@ -1,31 +1,40 @@
-import { useState } from "react";
-import AppWrapper from "../AppWrapper/AppWrapper";
-import { BugInput, ContactWrapper, Text } from "./Contact.styles";
-import Button from "../../common/Button/Button";
+import fb from '../../assets/images/logos/fb-logo.png';
+import ig from '../../assets/images/logos/ig-logo.png';
 
 const Contact = () => {
-    const [bugReport, setBugReport] = useState<string>('');
-    
-    const sendBugReport = () => {
-          console.log(bugReport);
-    }
-
     return (
-        <AppWrapper>
-            <ContactWrapper>
-                <h3>Contact Us</h3>
-                <Text>Email: pinklemonade.rollerdisco@gmail.com</Text>
-                <Text><b>Got a bug to report?</b></Text>
-                <BugInput
-                    placeholder="Tell us about it here"
-                    onChange={(e) => setBugReport(e.target.value)}
+        <div style={{
+            paddingLeft: '2rem',
+            paddingBottom: '2rem',
+            alignSelf: 'end'
+        }}>
+            <h2>Email</h2>
+            <span style={{
+                fontSize: '2rem',
+            }}>
+                pinklemonade.rollerdisco@gmail.com
+            </span>
+            <h2>Social Media</h2>
+            <div style={{
+                display: 'flex',
+                gap: '1rem'
+            }}>
+                <img
+                    src={ig}
+                    alt={ig}
+                    style={{
+                        width: '50px'
+                    }}                
                 />
-                <Button
-                    onClick={() => sendBugReport()}
-                    style={{ width: '50px' }}
-                >Submit</Button>
-            </ContactWrapper>
-        </AppWrapper>
+                <img
+                    src={fb}
+                    alt={fb}
+                    style={{
+                        width: '50px'
+                    }}                  
+                />
+            </div>
+        </div>
     )
 };
 

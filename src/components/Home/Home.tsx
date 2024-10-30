@@ -11,6 +11,9 @@ import { urls } from '../../consts/urls.ts';
 import { useNavigate } from 'react-router-dom';
 import Page from '../Page/Page';
 import { brandColours } from '../../consts/generalConsts';
+import { useRef } from 'react';
+import About from '../About/About';
+import Contact from '../Contact/Contact';
 
 const buttons = [
     {
@@ -29,14 +32,17 @@ const buttons = [
 
 const Home = () => {
     const navigate = useNavigate();
+    const scrollUpRef = useRef();
+
     return (
     <AppWrapper backgroundImage>
         <div
-            id='scroller'
+            ref={scrollUpRef}
             style={{
                 display: 'flex',
                 height: 'calc(100vh - 6rem)',
-                padding: '3rem'
+                padding: '3rem',
+                alignItems: 'center'
             }}
         >
             {/* <svg height="500" width="500" viewBox='0 -30 1 370' fill="url(#img1)">
@@ -78,6 +84,7 @@ const Home = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'flex-end',
+                    padding: '1rem',
                 }}
             >
                 <img
@@ -90,10 +97,13 @@ const Home = () => {
                 <Paragraph>We are a non-profit pop up roller disco based in Sheffield, South Yorkshire.
                     <br />
                     Our goal is to nurture the local roller skating community and create our own culture that is 
-                    inclusive, unique and nothing but fun.
+                    inclusive, unique and above all, fun.
                     <br />
                     We work with local creative talent to cultivate the best possible 
-                    atmosphere for you to party in!
+                    atmosphere for you to skate in!
+                    <br />
+                    <br />
+                    Will you join us?
                 </Paragraph>
                 <div
                     style={{
@@ -115,20 +125,23 @@ const Home = () => {
         <Page
             title='WHAT SKATERS ARE SAYING'
             backgroundColor={brandColours.cream}
+            scrollUpRef={scrollUpRef}
         >
             Top 3 most recent reviews
         </Page>
         <Page
             title='ABOUT US'
             backgroundColor={brandColours.pink}
+            scrollUpRef={scrollUpRef}
         >
-            Our journey
+            <About />
         </Page>
         <Page
             title='CONTACT US'
             backgroundColor={brandColours.yellow}
+            scrollUpRef={scrollUpRef}
         >
-            Contact details
+            <Contact />
         </Page>
     </AppWrapper>
 )};

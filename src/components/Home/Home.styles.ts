@@ -13,7 +13,7 @@ export const Paragraph = styled('p')(
     css({
         textAlign: 'end',
         paddingLeft: '4rem',
-        fontSize: '2.6rem',
+        fontSize: '2rem',
     })
 );
 
