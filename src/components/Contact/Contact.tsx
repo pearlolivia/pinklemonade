@@ -1,5 +1,6 @@
 import fb from '../../assets/images/logos/fb-logo.png';
 import ig from '../../assets/images/logos/ig-logo.png';
+import { urls } from '../../consts/urls';
 
 const Contact = () => {
     return (
@@ -23,15 +24,19 @@ const Contact = () => {
                     src={ig}
                     alt={ig}
                     style={{
-                        width: '50px'
-                    }}                
+                        width: '50px',
+                        cursor: 'pointer'
+                    }}
+                    onClick={() => window.location.href = urls.instagram}                
                 />
                 <img
                     src={fb}
                     alt={fb}
                     style={{
-                        width: '50px'
-                    }}                  
+                        width: '50px',
+                        cursor: 'pointer'
+                    }}
+                    onClick={() => window.location.href = urls.facebook}                  
                 />
             </div>
         </div>

@@ -6,18 +6,28 @@ const About = () => (
     style={{
         display: 'grid',
         padding: '0 2rem',
-        gridTemplateColumns: '40% 60%'
+        gridTemplateColumns: '40% 60%',
+        justifyItems: 'center'
     }}>
-        <img
-            src={founders}
-            alt={founders}
-            style={{
-                width:'350px',
-                position: 'relative',
-                left: '50%',
-                transform: 'translateX(-50%)'
-            }}
-        />
+        <div style={{
+            padding: '0.25rem',
+            borderRadius: '8px',
+            backgroundColor: '#000000',
+            width: '350px',
+            height: 'fit-content'
+        }}>
+            <img
+                src={founders}
+                alt={founders}
+                style={{
+                    width:'350px',
+                    position: 'relative',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    borderRadius: '8px'
+                }}
+            />
+        </div>
         <div style={{
             paddingLeft: '1rem'
         }}>

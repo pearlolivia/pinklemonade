@@ -12,7 +12,7 @@ export const Title = styled('h1')(
 export const Paragraph = styled('p')(
     css({
         textAlign: 'end',
-        paddingLeft: '4rem',
+        paddingLeft: '2.5rem',
         fontSize: '2rem',
     })
 );
