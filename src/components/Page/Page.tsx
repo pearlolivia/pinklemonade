@@ -1,5 +1,5 @@
 import { Wrapper } from "./Page.styles";
-import logo from '../../assets/images/logo_transparent.png';
+import logo from '../../assets/images/pl-up-button.png';
 import { useNavigate } from "react-router-dom";
 import { Ref } from "react";
 
@@ -34,7 +34,7 @@ const Page = ({ children, backgroundColor, title, scrollUpRef }: PageProps) => {
                 alt={logo}
                 onClick={handleScrollUp}
                 style={{
-                    width: '200px',
+                    width: '100px',
                     height: 'fit-content',
                     cursor: 'pointer'
                 }}

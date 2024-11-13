@@ -1,33 +1,19 @@
 import founders from '../../assets/images/forge/image9.jpg';
 import { QA } from './components';
+import { ImageBorder } from '../../styles';
+import { AboutWrapper, AboutImage } from './About.styles';
 
 const About = () => (
-    <div 
-    style={{
-        display: 'grid',
-        padding: '0 2rem',
-        gridTemplateColumns: '40% 60%',
-        justifyItems: 'center'
-    }}>
-        <div style={{
-            padding: '0.25rem',
-            borderRadius: '8px',
-            backgroundColor: '#000000',
+    <AboutWrapper>
+        <ImageBorder style={{
             width: '350px',
             height: 'fit-content'
         }}>
-            <img
+            <AboutImage
                 src={founders}
                 alt={founders}
-                style={{
-                    width:'350px',
-                    position: 'relative',
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    borderRadius: '8px'
-                }}
             />
-        </div>
+        </ImageBorder>
         <div style={{
             paddingLeft: '1rem'
         }}>
@@ -52,7 +38,7 @@ const About = () => (
                 this is the dream you are supporting. Thank you!'
             />
         </div>
-    </div>
+    </AboutWrapper>
 );
 
 export default About;

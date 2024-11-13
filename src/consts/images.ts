@@ -5,17 +5,23 @@ const imagesForge = import.meta.glob('../assets/images/forge/*', { eager: true }
 const imagesLogos = import.meta.glob('../assets/images/logo/*', { eager: true });
 const imagesMisc = import.meta.glob('../assets/images/*', { eager: true });
 
-// const imageList = Object.keys(images);
+const importList = [
+    imagesEcgbert1,
+    imagesEcgbert2,
+    imagesEcgbert3,
+    imagesForge,
+    imagesLogos,
+    imagesMisc
+];
 
 const getMergedList = () => {
-    const importList = [
-        imagesEcgbert1,
-        imagesEcgbert2,
-        imagesEcgbert3,
-        imagesForge,
-        imagesLogos,
-        imagesMisc
-    ];
-};
+    const list = [];
+    importList.forEach((img) => {
+        list.push(Object.keys(img));
+    })
+    return list.flat();
+}
 
-export default imagesMisc;
+const imageList = getMergedList();
+
+export default imageList;

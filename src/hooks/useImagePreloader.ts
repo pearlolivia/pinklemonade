@@ -12,7 +12,7 @@ const useImagePreloader = () => {
                 console.error('Failed to load image: ', src);
             };
     
-            img.src = src;
+            img.src = src.replace('..', '/src');
         });
     }
 
@@ -25,7 +25,7 @@ const useImagePreloader = () => {
                 imagesPromiseList.push(preloadImage(image));
             }
         }
-
+        
         if (imagesPromiseList.length > 0) {
             await Promise.all(imagesPromiseList)
                 .then(() => {

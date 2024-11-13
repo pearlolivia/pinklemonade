@@ -10,11 +10,14 @@ const Gallery = () => (
         <div style={{
             padding: '2rem'
         }}>
-            <h2 style={{ textAlign: 'center' }}>Photos of past events</h2>
+            <h2 
+                style={{ textAlign: 'center' }}
+            >
+                Photos of past events
+            </h2>
             <Grid>
                 {galleryImages.map(image => (
                     <Photo
-                    style={{ width: '30%', paddingRight: '8px' }}
                         src={image}
                         alt='gallery image'
                     />
