@@ -13,3 +13,14 @@ export const Wrapper = styled('div')(
         overflowY: 'auto',
     })
 );
+
+export const BackButtonContainer = styled.div({
+    position: 'absolute',
+    left: '20px',
+    padding: '0.5rem',
+});
+
+export const BackButton = styled.img({
+    width: '80px',
+    cursor: 'pointer'
+})

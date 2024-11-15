@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Wrapper } from './AppWrapper.styles';
+import { Wrapper, BackButtonContainer, BackButton } from './AppWrapper.styles';
 import background from '../../assets/images/forge_background.jpg';
 import { brandColours } from '../../consts/generalConsts';
 import logo from '../../assets/images/pl-back-button.png';
@@ -27,32 +27,24 @@ const AppWrapper = ({ children, backgroundImage, backgroundColor, isNested }: Pr
         <>
             {imagesPreloaded ? (
                 <Wrapper style={{
-                backgroundImage: backgroundImage ? `url(${background})` : 'none',
-                backgroundColor: !backgroundImage ? brandColours[backgroundColor] : 'none',
-            }}>
-                {isNested && (
-                    <div style={{
-                        position: 'absolute',
-                        left: '20px',
-                        padding: '0.5rem',
-                    }}>
-                        <img
-                            src={logo}
-                            alt={logo}
-                            style={{
-                                width: '80px',
-                                cursor: 'pointer'
-                            }}
-                            onClick={() => navigate('/')}
-                        />
-                    </div>
-                )}
-                {children}
-            </Wrapper>
-        ) : (
-            <LoadingSpinner />
-        )}
-    </>
+                    backgroundImage: backgroundImage ? `url(${background})` : 'none',
+                    backgroundColor: !backgroundImage ? brandColours[backgroundColor] : 'none',
+                }}>
+                    {isNested && (
+                        <BackButtonContainer>
+                            <BackButton
+                                src={logo}
+                                alt={logo}
+                                onClick={() => navigate('/')}
+                            />
+                        </BackButtonContainer>
+                    )}
+                    {children}
+                </Wrapper>
+            ) : (
+                <LoadingSpinner />
+            )}
+        </>
 )};
 
 export default AppWrapper;

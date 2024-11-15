@@ -1,3 +1,5 @@
+import { Question, Answer } from "./components.styles";
+
 interface QAProps {
     question: string;
     answer: string;
@@ -6,15 +8,14 @@ interface QAProps {
 const QA = ({question, answer}: QAProps) => (
     <>
         <div>
-            <span style={{
-                fontSize: '2.75rem',
-                fontWeight: 'bold'
-            }}>
+            <Question>
                 {question}
-            </span>
+            </Question>
             <br />
             <br />
-            <span>{answer}</span>
+            <Answer>
+                {answer}
+            </Answer>
         </div>
         <br />
     </>

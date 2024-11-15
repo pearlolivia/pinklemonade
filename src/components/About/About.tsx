@@ -1,19 +1,21 @@
 import founders from '../../assets/images/forge/image9.jpg';
 import { QA } from './components';
 import { ImageBorder } from '../../styles';
-import { AboutWrapper, AboutImage } from './About.styles';
+import { AboutWrapper, AboutImage, ImageContainer } from './About.styles';
 
 const About = () => (
     <AboutWrapper>
-        <ImageBorder style={{
-            width: '350px',
-            height: 'fit-content'
-        }}>
-            <AboutImage
-                src={founders}
-                alt={founders}
-            />
-        </ImageBorder>
+        <ImageContainer>
+            <ImageBorder style={{
+                width: '350px',
+                height: 'fit-content'
+            }}>
+                <AboutImage
+                    src={founders}
+                    alt={founders}
+                />
+            </ImageBorder>
+        </ImageContainer>
         <div style={{
             paddingLeft: '1rem'
         }}>
@@ -33,8 +35,7 @@ const About = () => (
             <QA
                 question='Our future plans'
                 answer='We want to provide the best DIY rollerskating experience possible and support our local community whilst doing so. That involves hiring 
-                local talent in the form of DJs, photographers, sound and lighting engineers. Our main goal is to buy our own set of skates to rent to people at 
-                our discos, as well as potentially running our own venue one day! Whenever you buy a ticket to a Pink Lemonade Roller Disco or buy a piece of merch, 
+                local talent in the form of DJs, photographers, illustrators, sound and lighting engineers. Our main goal is to buy our own set of rental skates, as well as potentially running our own venue one day! Whenever you buy a ticket to one of our discos or buy a piece of merch, 
                 this is the dream you are supporting. Thank you!'
             />
         </div>
