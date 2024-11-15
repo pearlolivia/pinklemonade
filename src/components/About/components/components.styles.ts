@@ -13,7 +13,7 @@ export const Question = styled('span')(
             font-size: 2.75rem;
         };
         ${mq('mobile')} {
-            font-size: 2rem;
+            font-size: 1.8rem;
         };
 `);
 
@@ -27,6 +27,6 @@ export const Answer = styled('span')(
             font-size: 1.5rem;
         };
         ${mq('mobile')} {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
         };
 `);

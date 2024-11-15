@@ -21,7 +21,7 @@ export const LandingImage = styled('img')(
     position: relative;
     borderRadius: 8px;
     ${mq('tablet')} {
-        height: 300px;
+        height: 280px;
     };
 `);
 
