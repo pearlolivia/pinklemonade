@@ -17,5 +17,9 @@ export default defineConfig(({mode }) => {
     //   }
     // },
     server: { port: 3000 },
+    base: './',
+    build: {
+      outDir: './docs'
+    },
   };
 });
