@@ -1,1 +1,0 @@
-import{n as t}from"./index-B3jLn2aa.js";const a={mobile:576,tabletPortrait:768,tablet:1024,laptop:1250},i=o=>`@media (max-width: ${a[o]}px)`,r=t.div({position:"relative"}),d=t.div({padding:"0.25rem",backgroundColor:"#000000",borderRadius:"8px"});export{r as A,d as I,i as m};
