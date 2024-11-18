@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import AppWrapper from '../AppWrapper/AppWrapper';
+import AppWrapper from 'components/AppWrapper/AppWrapper';
 import {
     Paragraph,
     Option,
@@ -12,15 +12,16 @@ import {
 import {
     AtomicRelativeDiv,
     ImageBorder
-} from '../../styles';
-import forge2 from '../../assets/images/forge/image8.jpg';
-import title from '../../assets/images/logos/logo_white.png';
-import { urls } from '../../consts/urls';
+} from 'styles';
+// import forge2 from 'assets/images/forge/image8.jpg';
+import forge2 from 'assets/images/forge/image8.jpg';
+import title from 'assets/images/logos/logo_white.png';
+import { urls } from 'consts/urls';
 import { useNavigate } from 'react-router-dom';
-import { brandColours } from '../../consts/generalConsts';
-import Page from '../Page/Page';
-import About from '../About/About';
-import Contact from '../Contact/Contact';
+import { brandColours } from 'consts/generalConsts';
+import Page from 'components/Page/Page';
+import About from 'components/About/About';
+import Contact from 'components/Contact/Contact';
 import { HomeButtonProps } from './Home.types';
 
 const buttons: HomeButtonProps[] = [

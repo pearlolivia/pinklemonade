@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
-import { brandColours } from "../../consts/generalConsts";
-import { mq } from "../../styles";
+import { brandColours } from "consts/generalConsts";
+import { mq } from "styles";
 
 export const LandingWrapper = styled('div')(
     css`
