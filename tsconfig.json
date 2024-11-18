@@ -4,7 +4,7 @@
 		"paths": {
 			"root": ["./"],
 			"@": ["./src"],
-			"assets/*": ["./src/assets/*"],
+			"assets/*": ["./public/assets/*"],
 			"common/*": ["./src/common/*"],
 			"components/*": ["./src/components/*"],
 			"consts": ["./src/consts"],

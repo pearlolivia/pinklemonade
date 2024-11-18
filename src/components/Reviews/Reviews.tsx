@@ -19,7 +19,7 @@ import {
     Star,
     SubmitWrapper,
 } from "./Reviews.styles";
-import star from '../../assets/images/star.png';
+import star from 'assets/images/star.png';
 
 const Reviews = () => {
     const [name, setName] = useState<string>('');

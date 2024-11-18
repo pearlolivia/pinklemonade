@@ -1,5 +1,5 @@
 import { Wrapper, Header, UpButton, ContentContainer } from "./Page.styles";
-import logo from '../../assets/images/pl-up-button.png';
+import logo from 'assets/images/pl-up-button.png';
 
 interface PageProps {
     children: any;

@@ -1,6 +1,6 @@
-import fb from '../../assets/images/logos/fb-logo.png';
-import ig from '../../assets/images/logos/ig-logo.png';
-import { urls } from '../../consts/urls';
+import fb from 'assets/images/logos/fb-logo.png';
+import ig from 'assets/images/logos/ig-logo.png';
+import { urls } from 'consts/urls';
 import {
     ContactWrapper,
     Icon,
