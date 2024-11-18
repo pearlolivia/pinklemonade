@@ -2,7 +2,6 @@ import { useState } from "react";
 import AppWrapper from "../AppWrapper/AppWrapper";
 import { Grid, Photo, LargePhoto, LargePhotoContainer } from "./Gallery.styles";
 import { galleryImages } from "./consts/consts";
-import testPhoto from '../../assets/images/ecgbert-apr23/image1.jpg';
 
 const Gallery = () => {
     const [openPhoto, setOpenPhoto] = useState<string | null>(null);

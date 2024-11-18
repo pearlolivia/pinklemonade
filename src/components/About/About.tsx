@@ -1,4 +1,4 @@
-import founders from '../../assets/images/forge/image9.jpg';
+import founders from 'assets/images/forge/image9.jpg';
 import { QA } from './components';
 import { ImageBorder } from '../../styles';
 import { AboutWrapper, AboutImage, ImageContainer } from './About.styles';

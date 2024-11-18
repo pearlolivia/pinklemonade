@@ -1,8 +1,8 @@
 import { CircularProgress } from '@mui/material';
 import { motion } from 'framer-motion';
 import { SpinnerWrapper } from './LoadingSpinner.styles.ts';
-import { brandColours } from '../../consts/generalConsts.ts';
-import logo from '../../assets/images/logo_transparent.png';
+import { brandColours } from 'consts/generalConsts.ts';
+import logo from 'assets/images/logo_transparent.png';
 
 const LoadingSpinner = () => (
     <SpinnerWrapper>
