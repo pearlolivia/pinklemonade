@@ -11,8 +11,8 @@ const useImagePreloader = () => {
             img.onerror = () => {
                 console.error('Failed to load image: ', src);
             };
-    
-            img.src = src.replace('..', '/src');
+
+            img.src = src.replace('/public', '');
         });
     }
 
