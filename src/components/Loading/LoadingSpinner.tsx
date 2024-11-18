@@ -6,14 +6,16 @@ import logo from '../../assets/images/logo_transparent.png';
 
 const LoadingSpinner = () => (
     <SpinnerWrapper>
-        <CircularProgress style={{
+        <CircularProgress
+            style={{
                 color: brandColours.pink,
                 position: 'absolute',
                 width: '90px',
                 height: '90px',
                 left: '5px',
                 top: '-7px',
-            }} />
+            }}
+        />
         <motion.img
             style={{ width: '100px' }}
             src={logo}

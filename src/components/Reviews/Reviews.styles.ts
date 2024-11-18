@@ -3,11 +3,11 @@ import { css } from "@emotion/react";
 
 export const ReviewsWrapper = styled('div')(
     css({
-        padding: '0 2rem',
+        padding: '2rem',
     })
 );
 
-export const Heading = styled('h3')(
+export const Heading = styled('h2')(
     {
         textAlign: 'center',
     }

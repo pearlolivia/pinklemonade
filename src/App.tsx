@@ -1,6 +1,6 @@
-import React, { Suspense } from 'react';
-import Paths from './paths/Paths.tsx';
-import LoadingSpinner from './components/Loading/LoadingSpinner.tsx';
+import { Suspense } from 'react';
+import Paths from './paths/Paths';
+import LoadingSpinner from './components/Loading/LoadingSpinner';
 
 function App() {
   return (

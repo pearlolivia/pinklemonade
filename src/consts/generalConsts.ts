@@ -1,5 +1,6 @@
 export const brandColours = {
-        pink: '#FEAEDA',
-        yellow: '#FEF94E',
+        pink: '#fccfe8',
+        yellow: '#fffb70',
         blue: '#8DD9E6',
+        cream: '#FDFDDF'
 };

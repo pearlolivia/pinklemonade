@@ -1,0 +1,49 @@
+{
+    "globals": {
+        "JSX": true
+    },
+    "rules": {
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "camelcase": "off",
+        "no-underscore-dangle": "off",
+        "no-alert": "off",
+        "no-restricted-globals": "off",
+        "no-param-reassign": ["error", { "props": false }],
+        "linebreak-style": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+        "react/jsx-indent": "off",
+        "react/prefer-stateless-function": "off",
+        "react/jsx-max-props-per-line": [1, { "maximum": 1 }],
+        "react/jsx-props-no-spreading": ["off", {
+            "html": "ignore",
+            "custom": "ignore",
+            "exceptions": []
+        }],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
+    },
+    "extends": [
+        "eslint-config-react-app"
+    ],
+    "env": {
+        "jest": true,
+        "es6": true,
+        "browser": true
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"],
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    }
+}

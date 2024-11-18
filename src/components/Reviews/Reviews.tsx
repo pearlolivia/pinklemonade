@@ -69,7 +69,10 @@ const Reviews = () => {
     }, []);
 
     return (
-    <AppWrapper>
+    <AppWrapper
+        backgroundColor="blue"
+        isNested
+    >
         <ReviewsWrapper>
             <Heading>Been to Pink Lemonade before? Leave us a review!</Heading>
             {showThankYou ? (<ThankYou />) : (
