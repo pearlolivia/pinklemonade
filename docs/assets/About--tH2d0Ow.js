@@ -1,4 +1,4 @@
-import{n as o,c as n,j as e}from"./index-BXxsMbBx.js";import{f as s}from"./image9-DbXFBAOF.js";import{m as t,I as l}from"./universal.styles-Cjhr7nK0.js";const d=o("span")(n`
+import{n as o,c as n,j as e}from"./index-Czrz8xKF.js";import{f as s}from"./image9-DbXFBAOF.js";import{m as t,I as l}from"./universal.styles-Dxey4lAH.js";const d=o("span")(n`
         font-size: 2.75rem;
         font-weight: bold;
         ${t("laptop")} {

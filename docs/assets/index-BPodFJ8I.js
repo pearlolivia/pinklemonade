@@ -1,4 +1,4 @@
-import{n as s,b as W,j as e,c as a,r as n}from"./index-BXxsMbBx.js";import{A as F,s as o}from"./AppWrapper-D20rGNr3.js";import"./image9-DbXFBAOF.js";const B=s.div`
+import{n as s,b as W,j as e,c as a,r as n}from"./index-Czrz8xKF.js";import{A as F,s as o}from"./AppWrapper-DUtU8QjP.js";import"./image9-DbXFBAOF.js";const B=s.div`
     padding: 20px 60px;
     background: #FFFFFF;
     border-radius: 16px;

@@ -1,4 +1,4 @@
-import{n as t,c as i,b as l,j as e,u as m,r as g,a as c}from"./index-BXxsMbBx.js";import{l as d,A as f,f as p}from"./AppWrapper-D20rGNr3.js";import{m as n,A as j,I as b}from"./universal.styles-Cjhr7nK0.js";import{A as v}from"./About-BVDz5php.js";import{C as w}from"./Contact-DiMehfR8.js";import"./image9-DbXFBAOF.js";const y=t("div")(i`
+import{n as t,c as i,b as l,j as e,u as m,r as g,a as c}from"./index-Czrz8xKF.js";import{l as d,A as f,f as p}from"./AppWrapper-DUtU8QjP.js";import{m as n,A as j,I as b}from"./universal.styles-Dxey4lAH.js";import{A as v}from"./About--tH2d0Ow.js";import{C as w}from"./Contact-mEmmEUkk.js";import"./image9-DbXFBAOF.js";const y=t("div")(i`
         display: flex;
         height: calc(100vh - 6rem);
         padding: 3rem;
