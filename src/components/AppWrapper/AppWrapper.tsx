@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { Wrapper, BackButtonContainer, BackButton } from './AppWrapper.styles';
-import background from '../../assets/images/forge_background.jpg';
-import { brandColours } from '../../consts/generalConsts';
-import logo from '../../assets/images/pl-back-button.png';
+import background from 'assets/images/forge_background.jpg';
+import { brandColours } from 'consts/generalConsts';
+import logo from 'assets/images/pl-back-button.png';
 import { useNavigate } from 'react-router-dom';
-import useImagePreloader from '../../hooks/useImagePreloader';
-import imageList from '../../consts/images';
+import useImagePreloader from 'hooks/useImagePreloader';
+import imageList from 'consts/images';
 import LoadingSpinner from '../Loading/LoadingSpinner.js';
 
 interface Props {

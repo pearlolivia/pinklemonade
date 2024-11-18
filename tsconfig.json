@@ -1,5 +1,19 @@
 {
     "compilerOptions": {
+        "baseUrl": "./",
+		"paths": {
+			"root": ["./"],
+			"@": ["./src"],
+			"assets/*": ["./src/assets/*"],
+			"common/*": ["./src/common/*"],
+			"components/*": ["./src/components/*"],
+			"consts": ["./src/consts"],
+			"hooks/*": ["./src/hooks/*"],
+			"paths/*": ["./src/paths/*"],
+			"store": ["./src/store"],
+			"styles": ["./src/styles"],
+			"utils": ["./src/utils"]
+		},
         "target": "ESNext",
         "types": ["vite/client", "node"],
         "module": "esnext",
