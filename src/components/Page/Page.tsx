@@ -1,4 +1,4 @@
-import { Wrapper, Header, UpButton, ContentContainer } from "./Page.styles";
+import { Wrapper, Header, UpButton, ContentContainer, HeaderText } from "./Page.styles";
 import logo from 'assets/images/pl-up-button.png';
 
 interface PageProps {
@@ -14,20 +14,23 @@ const Page = ({ children, backgroundColor, title, scrollUpRef }: PageProps) => {
     };
 
     return (
-    <Wrapper style={{
-        backgroundColor: backgroundColor ? backgroundColor : 'none',
-    }}>
+    <Wrapper
+        className={title.replace(' ', '-').toLowerCase()}
+        style={{
+            backgroundColor: backgroundColor ? backgroundColor : 'none',
+        }}
+    >
         <Header>
-            <h1 style={{ fontSize: '5rem' }}>
+            <HeaderText>
                 {title}
-            </h1>
+            </HeaderText>
             <UpButton
                 src={logo}
                 alt={logo}
                 onClick={handleScrollUp}
             />
         </Header>
-        <ContentContainer>
+        <ContentContainer className={title.replace(' ', '-').toLowerCase()}>
             {children}
         </ContentContainer>
     </Wrapper>

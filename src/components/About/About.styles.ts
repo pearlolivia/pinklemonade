@@ -12,6 +12,9 @@ export const AboutWrapper = styled('div')(
     ${mq('tabletPortrait')} {
         grid-template-columns: auto;
     };
+    ${mq('mobile')} {
+        padding: 0 1rem;
+    };
 `);
 
 export const AboutImage = styled('img')(
