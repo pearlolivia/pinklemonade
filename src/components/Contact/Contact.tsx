@@ -5,19 +5,16 @@ import {
     ContactWrapper,
     Icon,
     IconContainer,
+    EmailText,
 } from './Contact.styles';
 
 const Contact = () => {
     return (
         <ContactWrapper>
             <h2>Email</h2>
-            <span
-                style={{
-                    fontSize: '2rem',
-                }}
-            >
+            <EmailText>
                 pinklemonade.rollerdisco@gmail.com
-            </span>
+            </EmailText>
             <h2>Social Media</h2>
             <IconContainer>
                 <Icon
