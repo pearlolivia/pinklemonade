@@ -1,19 +1,18 @@
 import { CircularProgress } from '@mui/material';
 import { motion } from 'framer-motion';
-import { SpinnerWrapper, TextSpan } from './LoadingSpinner.styles.ts';
+import { SpinnerWrapper, TextSpan, SpinnerContainer } from './LoadingSpinner.styles.ts';
 import { brandColours } from 'consts/generalConsts.ts';
 import logo from 'assets/images/logo_transparent.png';
 
 const LoadingSpinner = () => (
     <SpinnerWrapper>
-        <div>
+        <SpinnerContainer>
             <CircularProgress
                 style={{
                     color: brandColours.pink,
                     position: 'absolute',
                     width: '90px',
                     height: '90px',
-                    left: '31%',
                     top: '-7px',
                 }}
             />
@@ -24,7 +23,7 @@ const LoadingSpinner = () => (
                 animate={{ rotateZ: [0, 360] }}
                 transition={{ repeat: Infinity, duration: 3 }}
             />
-        </div>
+        </SpinnerContainer>
         <br />
         <TextSpan>Please wait while we fetch all our fabulous assets!</TextSpan>
     </SpinnerWrapper>

@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
-import { CircularProgress } from '@mui/material';
 
 export const SpinnerWrapper = styled('div')(
     css({
@@ -17,5 +16,13 @@ export const SpinnerWrapper = styled('div')(
 export const TextSpan = styled('span')(
     css({
         textAlign: 'center',
+    })
+);
+
+export const SpinnerContainer = styled('div')(
+    css({
+        display: 'flex',
+        justifyContent: 'center',
+        width: '100%',
     })
 )
