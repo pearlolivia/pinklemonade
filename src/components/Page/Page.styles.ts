@@ -40,7 +40,7 @@ export const HeaderText = styled('h1')(
 export const UpButton = styled('img')(
     css`
         width: 100px;
-        height: fit-content;
+        max-height: fit-content;
         cursor: pointer;
         ${mq('mobile')} {
             width: 60px;
@@ -52,10 +52,12 @@ export const ContentContainer = styled('div')(
     css`
     height: calc(100vh - 202px);
     display: flex;
-    align-Items: center;
+    align-items: center;
     ${mq('mobile')} {
         &.contact-us {
             height: calc(100vh - 108px);
+            flex-direction: column;
+            justify-content: end;
         }
     };
 `);
