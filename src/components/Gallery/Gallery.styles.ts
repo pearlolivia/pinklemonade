@@ -25,7 +25,7 @@ export const LargePhoto = styled('img')(
         width: 500px;
     };
     ${mq('mobile')} {
-        width: 400px;
+        width: 300px;
     };
 `);
 
