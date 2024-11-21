@@ -1,11 +1,11 @@
-import{n as s,c as i,b as c,r as l,j as e}from"./index-DwxN3XkH.js";import{a as g,b as d,c as p,d as h,e as m,g as x,h as b,f,i as u,j,k as y,m as P,n as k,o as v,p as w,q as C,r as $,A}from"./AppWrapper-DrIa_NG9.js";import{m as a}from"./universal.styles-D_evtGM7.js";import"./image9-DY9-FDpt.js";const G=s("div")({position:"relative",left:"4%"}),L=s("img")({width:"30%",paddingRight:"8px"}),q=s("img")(i`
+import{n as s,c as i,b as c,r as l,j as e}from"./index-BWUxmAIt.js";import{a as g,b as d,c as p,d as h,e as m,g as x,h as b,f,i as u,j,k as y,m as P,n as k,o as v,p as w,q as C,r as $,A}from"./AppWrapper-B486ClW1.js";import{m as a}from"./universal.styles-b1Z25u_b.js";import"./image9-DY9-FDpt.js";const G=s("div")({position:"relative",left:"4%"}),L=s("img")({width:"30%",paddingRight:"8px"}),q=s("img")(i`
     width: 700px;
     border-radius: 8px;
     ${a("tablet")} {
         width: 500px;
     };
     ${a("mobile")} {
-        width: 400px;
+        width: 300px;
     };
 `),E=s("div")(i`
     position: fixed;
