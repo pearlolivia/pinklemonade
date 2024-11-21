@@ -1,4 +1,4 @@
-import{n,c as r,j as o,a as e}from"./index-BWUxmAIt.js";import{m as a}from"./universal.styles-b1Z25u_b.js";const i=""+new URL("fb-logo-F4Aimzw8.png",import.meta.url).href,t=""+new URL("ig-logo-DRedwLyy.png",import.meta.url).href,l=n("div")(r`
+import{n,c as r,j as o,a as e}from"./index-D2c_ZYkE.js";import{m as a}from"./universal.styles-BfX5zLlw.js";const i=""+new URL("fb-logo-F4Aimzw8.png",import.meta.url).href,t=""+new URL("ig-logo-DRedwLyy.png",import.meta.url).href,l=n("div")(r`
     padding-left: 2rem;
     padding-bottom: 2rem;
     align-self: end;
