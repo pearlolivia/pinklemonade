@@ -1,4 +1,4 @@
-import{n as r,c as o,b as l,j as e,u,r as g,a as c}from"./index-BH3Ov6Vv.js";import{l as d,A as f,f as p}from"./AppWrapper-O_B8pW57.js";import{m as t,A as b,I as j}from"./universal.styles-D4VxbXtq.js";import{A as v}from"./About-B2BM4gRU.js";import{C as w}from"./Contact-Cc4KrCH7.js";import"./image9-DY9-FDpt.js";const $=r("div")(o`
+import{n as r,c as o,b as l,j as e,u,r as g,a as c}from"./index-DwxN3XkH.js";import{l as d,A as f,f as p}from"./AppWrapper-DrIa_NG9.js";import{m as t,A as b,I as j}from"./universal.styles-D_evtGM7.js";import{A as v}from"./About-_5aw6yE7.js";import{C as w}from"./Contact-ihwKLceL.js";import"./image9-DY9-FDpt.js";const $=r("div")(o`
         display: flex;
         height: calc(100vh - 6rem);
         padding: 3rem;
@@ -10,7 +10,7 @@ import{n as r,c as o,b as l,j as e,u,r as g,a as c}from"./index-BH3Ov6Vv.js";imp
         ${t("mobile")} {
             padding: 3rem 2rem;
         };
-`),C=r("img")(o`
+`),y=r("img")(o`
     height: 400px;
     position: relative;
     borderRadius: 8px;
@@ -20,7 +20,7 @@ import{n as r,c as o,b as l,j as e,u,r as g,a as c}from"./index-BH3Ov6Vv.js";imp
     ${t("mobile")} {
         height: 150px;
     };
-`),y=r("div")(o`
+`),C=r("div")(o`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -89,26 +89,28 @@ import{n as r,c as o,b as l,j as e,u,r as g,a as c}from"./index-BH3Ov6Vv.js";imp
     ${t("mobile")} {
         padding: 0.2rem 2rem;
     };
-`),I=r("h1")(o`
+`),L=r("h1")(o`
         font-size: 5rem;
         ${t("mobile")} {
             font-size: 3rem;
         };
-`),L=r("img")(o`
+`),S=r("img")(o`
         width: 100px;
-        height: fit-content;
+        max-height: fit-content;
         cursor: pointer;
         ${t("mobile")} {
             width: 60px;
             padding-top: 0.5rem;
         };
-`),S=r("div")(o`
+`),B=r("div")(o`
     height: calc(100vh - 202px);
     display: flex;
-    align-Items: center;
+    align-items: center;
     ${t("mobile")} {
         &.contact-us {
             height: calc(100vh - 108px);
+            flex-direction: column;
+            justify-content: end;
         }
     };
-`),h=({children:s,backgroundColor:n,title:a,scrollUpRef:i})=>{const x=()=>{i.current.scrollIntoView({behavior:"smooth"})};return e.jsxs(U,{className:a.replace(" ","-").toLowerCase(),style:{backgroundColor:n||"none"},children:[e.jsxs(z,{children:[e.jsx(I,{children:a}),e.jsx(L,{src:d,alt:d,onClick:x})]}),e.jsx(S,{className:a.replace(" ","-").toLowerCase(),children:s})]})},B=[{name:"Gallery",url:c.gallery},{name:"Reviews",url:c.reviews,external:!0}],P=()=>{const s=u(),n=g.useRef(),a=i=>{i.external?window.location.href=i.url:s(i.url)};return e.jsxs(f,{backgroundImage:!0,children:[e.jsxs($,{ref:n,children:[e.jsx(b,{children:e.jsx(j,{children:e.jsx(C,{src:p,alt:p})})}),e.jsxs(y,{children:[e.jsx(k,{src:m,alt:m}),e.jsxs(A,{children:["We are a non-profit pop up roller disco based in Sheffield, South Yorkshire.",e.jsx("br",{}),"Our goal is to nurture the local roller skating community and create our own culture that is inclusive, unique and above all, fun.",e.jsx("br",{}),"We work with local creative talent to cultivate the best possible atmosphere for you to skate in!",e.jsx("br",{}),e.jsx("br",{}),"Will you join us?"]}),e.jsx(W,{children:B.map(i=>e.jsx(R,{onClick:()=>a(i),children:i.name}))})]})]}),e.jsx(h,{title:"ABOUT US",backgroundColor:l.pink,scrollUpRef:n,children:e.jsx(v,{})}),e.jsx(h,{title:"CONTACT US",backgroundColor:l.yellow,scrollUpRef:n,children:e.jsx(w,{})})]})},D=P;export{D as default};
+`),h=({children:s,backgroundColor:n,title:a,scrollUpRef:i})=>{const x=()=>{i.current.scrollIntoView({behavior:"smooth"})};return e.jsxs(U,{className:a.replace(" ","-").toLowerCase(),style:{backgroundColor:n||"none"},children:[e.jsxs(z,{children:[e.jsx(L,{children:a}),e.jsx(S,{src:d,alt:d,onClick:x})]}),e.jsx(B,{className:a.replace(" ","-").toLowerCase(),children:s})]})},I=[{name:"Gallery",url:c.gallery},{name:"Reviews",url:c.reviews,external:!0}],P=()=>{const s=u(),n=g.useRef(),a=i=>{i.external?window.location.href=i.url:s(i.url)};return e.jsxs(f,{backgroundImage:!0,children:[e.jsxs($,{ref:n,children:[e.jsx(b,{children:e.jsx(j,{children:e.jsx(y,{src:p,alt:p})})}),e.jsxs(C,{children:[e.jsx(k,{src:m,alt:m}),e.jsxs(A,{children:["We are a non-profit pop up roller disco based in Sheffield, South Yorkshire.",e.jsx("br",{}),"Our goal is to nurture the local roller skating community and create our own culture that is inclusive, unique and above all, fun.",e.jsx("br",{}),"We work with local creative talent to cultivate the best possible atmosphere for you to skate in!",e.jsx("br",{}),e.jsx("br",{}),"Will you join us?"]}),e.jsx(W,{children:I.map(i=>e.jsx(R,{onClick:()=>a(i),children:i.name}))})]})]}),e.jsx(h,{title:"ABOUT US",backgroundColor:l.pink,scrollUpRef:n,children:e.jsx(v,{})}),e.jsx(h,{title:"CONTACT US",backgroundColor:l.yellow,scrollUpRef:n,children:e.jsx(w,{})})]})},D=P;export{D as default};

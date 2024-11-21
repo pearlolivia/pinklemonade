@@ -2,11 +2,15 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/react";
 import { mq } from "styles";
 
-export const ContactWrapper = styled.div({
-    paddingLeft: '2rem',
-    paddingBottom: '2rem',
-    alignSelf: 'end'
-});
+export const ContactWrapper = styled('div')(
+    css`
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    align-self: end;
+    ${mq('mobile')} {
+        align-self: start;
+    };   
+`);
 
 export const IconContainer = styled.div({
     display: 'flex',
