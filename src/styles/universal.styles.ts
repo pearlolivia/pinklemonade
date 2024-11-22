@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 const breakpoints = {
     'mobile': 576,
     'tabletPortrait': 768,
-    'tablet': 1024, 
+    'tablet': 1170, 
     'laptop': 1250
 };
 

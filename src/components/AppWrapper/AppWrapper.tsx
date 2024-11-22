@@ -10,7 +10,7 @@ import LoadingSpinner from '../Loading/LoadingSpinner.js';
 
 interface Props {
     children: any;
-    backgroundColor?: 'pink' | 'yellow' | 'cream' | 'blue';
+    backgroundColor?: 'pink' | 'yellow' | 'cream' | 'blue' | 'purple' | 'pink';
     backgroundImage?: boolean;
     isNested?: boolean;
 }

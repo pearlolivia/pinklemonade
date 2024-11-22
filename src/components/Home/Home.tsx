@@ -13,8 +13,7 @@ import {
     AtomicRelativeDiv,
     ImageBorder
 } from 'styles';
-// import forge2 from 'assets/images/forge/image8.jpg';
-import forge2 from 'assets/images/forge/image8.jpg';
+import illustration from 'assets/images/illustration-purple.jpeg';
 import title from 'assets/images/logos/logo_white.png';
 import { urls } from 'consts/urls';
 import { useNavigate } from 'react-router-dom';
@@ -49,17 +48,15 @@ const Home = () => {
         if (item.external) { window.location.href = item.url }
         else { navigate(item.url) }
     }
-
+    console.log('Welcome to Pink Lemonade');
     return (
-        <AppWrapper backgroundImage>
+        <AppWrapper backgroundColor='purple'>
                 <LandingWrapper ref={scrollUpRef}>
                     <AtomicRelativeDiv>
-                        <ImageBorder>
-                            <LandingImage
-                                src={forge2}
-                                alt={forge2}
-                            />
-                        </ImageBorder>
+                        <LandingImage
+                            src={illustration}
+                            alt={illustration}
+                        />
                     </AtomicRelativeDiv>
                     <ContentWrapper>
                         <LogoWidth
@@ -104,7 +101,7 @@ const Home = () => {
                 </Page>
                 <Page
                     title='CONTACT US'
-                    backgroundColor={brandColours.yellow}
+                    backgroundColor={brandColours.cream}
                     scrollUpRef={scrollUpRef}
                 >
                     <Contact />

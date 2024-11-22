@@ -12,6 +12,9 @@ export const Wrapper = styled('div')<ContainerProps>(
         width: 100%;
         overflow-x: hidden;
         overflow-y: hidden;
+        &.about-us {
+            height: calc(100vh + 100px);
+        }
         ${mq('mobile')} {
             &.about-us {
                 height: calc(100vh + 350px);
