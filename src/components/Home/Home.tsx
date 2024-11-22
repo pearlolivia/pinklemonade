@@ -48,7 +48,7 @@ const Home = () => {
         if (item.external) { window.location.href = item.url }
         else { navigate(item.url) }
     }
-    console.log('Welcome to Pink Lemonade');
+    
     return (
         <AppWrapper backgroundColor='purple'>
                 <LandingWrapper ref={scrollUpRef}>
