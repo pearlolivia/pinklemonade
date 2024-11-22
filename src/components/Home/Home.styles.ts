@@ -20,14 +20,14 @@ export const LandingWrapper = styled('div')(
 
 export const LandingImage = styled('img')(
     css`
-    height: 400px;
+    height: 540px;
     position: relative;
     borderRadius: 8px;
     ${mq('tablet')} {
-        height: 280px;
+        height: 460px;
     };
     ${mq('mobile')} {
-        height: 150px;
+        height: 210px;
     };
 `);
 
@@ -41,7 +41,7 @@ export const ContentWrapper = styled('div')(
         align-items: center;
     };
     ${mq('mobile')} {
-        padding: 1rem 0;
+        padding: 0;
     };
 `);
 
