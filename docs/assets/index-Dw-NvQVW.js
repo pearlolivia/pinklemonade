@@ -1,4 +1,4 @@
-import{n as o,c as r,b as s,j as e,u,r as g,a as c}from"./index--XF2QpxF.js";import{l as d,A as b,i as p}from"./AppWrapper-PysYJznQ.js";import{m as t,A as f}from"./universal.styles-ZDdJUOuT.js";import{A as j}from"./About-VrPBzLis.js";import{C as v}from"./Contact-GU6SFu-I.js";import"./image9-DY9-FDpt.js";const w=o("div")(r`
+import{n as o,c as r,b as c,j as e,u,r as g,a as s}from"./index-Cti4-xcr.js";import{l as d,A as b,i as p}from"./AppWrapper-i3ywwlmw.js";import{m as t,A as f}from"./universal.styles-hKcBnE6W.js";import{A as j}from"./About-BQTiJmSU.js";import{C as v}from"./Contact-H5QPZ6U7.js";import"./image9-DY9-FDpt.js";const w=o("div")(r`
         display: flex;
         height: calc(100vh - 6rem);
         padding: 3rem;
@@ -66,7 +66,7 @@ import{n as o,c as r,b as s,j as e,u,r as g,a as c}from"./index--XF2QpxF.js";imp
         border-radius: 40px;
         text-wrap: nowrap;
         cursor: pointer;
-        background-color: ${s.cream};
+        background-color: ${c.cream};
         ${t("mobile")} {
             padding: 10px 20px;
             font-size: 1.2rem;
@@ -116,4 +116,4 @@ import{n as o,c as r,b as s,j as e,u,r as g,a as c}from"./index--XF2QpxF.js";imp
             justify-content: end;
         }
     };
-`),h=({children:l,backgroundColor:n,title:a,scrollUpRef:i})=>{const x=()=>{i.current.scrollIntoView({behavior:"smooth"})};return e.jsxs(L,{className:a.replace(" ","-").toLowerCase(),style:{backgroundColor:n||"none"},children:[e.jsxs(R,{children:[e.jsx(U,{children:a}),e.jsx(z,{src:d,alt:d,onClick:x})]}),e.jsx(P,{className:a.replace(" ","-").toLowerCase(),children:l})]})},S=[{name:"Gallery",url:c.gallery},{name:"Reviews",url:c.reviews,external:!0}],B=()=>{const l=u(),n=g.useRef(),a=i=>{i.external?window.location.href=i.url:l(i.url)};return console.log("Welcome to Pink Lemonade"),e.jsxs(b,{backgroundColor:"purple",children:[e.jsxs(w,{ref:n,children:[e.jsx(f,{children:e.jsx($,{src:p,alt:p})}),e.jsxs(C,{children:[e.jsx(y,{src:m,alt:m}),e.jsxs(W,{children:["We are a non-profit pop up roller disco based in Sheffield, South Yorkshire.",e.jsx("br",{}),"Our goal is to nurture the local roller skating community and create our own culture that is inclusive, unique and above all, fun.",e.jsx("br",{}),"We work with local creative talent to cultivate the best possible atmosphere for you to skate in!",e.jsx("br",{}),e.jsx("br",{}),"Will you join us?"]}),e.jsx(k,{children:S.map(i=>e.jsx(A,{onClick:()=>a(i),children:i.name}))})]})]}),e.jsx(h,{title:"ABOUT US",backgroundColor:s.pink,scrollUpRef:n,children:e.jsx(j,{})}),e.jsx(h,{title:"CONTACT US",backgroundColor:s.cream,scrollUpRef:n,children:e.jsx(v,{})})]})},I=B;export{I as default};
+`),h=({children:l,backgroundColor:n,title:a,scrollUpRef:i})=>{const x=()=>{i.current.scrollIntoView({behavior:"smooth"})};return e.jsxs(L,{className:a.replace(" ","-").toLowerCase(),style:{backgroundColor:n||"none"},children:[e.jsxs(R,{children:[e.jsx(U,{children:a}),e.jsx(z,{src:d,alt:d,onClick:x})]}),e.jsx(P,{className:a.replace(" ","-").toLowerCase(),children:l})]})},S=[{name:"Tickets",url:s.tickets,external:!0},{name:"Gallery",url:s.gallery},{name:"Reviews",url:s.reviews,external:!0}],T=()=>{const l=u(),n=g.useRef(),a=i=>{i.external?window.location.href=i.url:l(i.url)};return console.log("Welcome to Pink Lemonade"),e.jsxs(b,{backgroundColor:"purple",children:[e.jsxs(w,{ref:n,children:[e.jsx(f,{children:e.jsx($,{src:p,alt:p})}),e.jsxs(C,{children:[e.jsx(y,{src:m,alt:m}),e.jsxs(W,{children:["We are a non-profit pop up roller disco based in Sheffield, South Yorkshire.",e.jsx("br",{}),"Our goal is to nurture the local roller skating community and create our own culture that is inclusive, unique and above all, fun.",e.jsx("br",{}),"We work with local creative talent to cultivate the best possible atmosphere for you to skate in!",e.jsx("br",{}),e.jsx("br",{}),"Will you join us?"]}),e.jsx(k,{children:S.map(i=>e.jsx(A,{onClick:()=>a(i),children:i.name}))})]})]}),e.jsx(h,{title:"ABOUT US",backgroundColor:c.pink,scrollUpRef:n,children:e.jsx(j,{})}),e.jsx(h,{title:"CONTACT US",backgroundColor:c.cream,scrollUpRef:n,children:e.jsx(v,{})})]})},I=T;export{I as default};
