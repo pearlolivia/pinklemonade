@@ -24,11 +24,11 @@ import Contact from 'components/Contact/Contact';
 import { HomeButtonProps } from './Home.types';
 
 const buttons: HomeButtonProps[] = [
-    // { //uncomment when tickets are available
-    //     name: 'Tickets', // upcoming with ticket links
-    //     url: urls.tickets,
-    //     external: true
-    // },
+    {
+        name: 'Tickets', // upcoming with ticket links
+        url: urls.tickets,
+        external: true
+    },
     {
         name: 'Gallery', // images with hover descriptions
         url: urls.gallery,
@@ -48,7 +48,9 @@ const Home = () => {
         if (item.external) { window.location.href = item.url }
         else { navigate(item.url) }
     }
+
     console.log('Welcome to Pink Lemonade');
+    
     return (
         <AppWrapper backgroundColor='purple'>
                 <LandingWrapper ref={scrollUpRef}>

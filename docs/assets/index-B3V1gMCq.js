@@ -1,1 +1,0 @@
-import{j as t}from"./index--XF2QpxF.js";import{A as r}from"./AppWrapper-PysYJznQ.js";import"./universal.styles-ZDdJUOuT.js";import"./image9-DY9-FDpt.js";const e=()=>t.jsx(r,{children:t.jsx("div",{children:"Get your tickets here"})}),c=e;export{c as default};
