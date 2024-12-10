@@ -13,19 +13,22 @@ interface Props {
     backgroundColor?: 'pink' | 'yellow' | 'cream' | 'blue' | 'purple' | 'pink';
     backgroundImage?: boolean;
     isNested?: boolean;
+    className?: string;
 }
 
-const AppWrapper = ({ children, backgroundImage, backgroundColor, isNested }: Props) => {
+const AppWrapper = ({ children, backgroundImage, backgroundColor, isNested, className }: Props) => {
     const navigate = useNavigate();
+
+    const runPreload = className === 'gallery';
     const { imagesPreloaded, preloadImages } = useImagePreloader();
 
     useEffect(() => {
-        preloadImages(imageList);
+        if (runPreload) preloadImages(imageList);
     }, []);
 
     return (
         <>
-            {imagesPreloaded ? (
+            {(runPreload && imagesPreloaded) || !runPreload ? (
                 <Wrapper style={{
                     backgroundImage: backgroundImage ? `url(${background})` : 'none',
                     backgroundColor: !backgroundImage ? brandColours[backgroundColor] : 'none',
