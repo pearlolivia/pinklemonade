@@ -1,0 +1,1 @@
+import{j as r}from"./index-DRkWjIrG.js";import{A as e}from"./AppWrapper-BG-YADls.js";import"./universal.styles-D78_Ucwy.js";import"./image9-DY9-FDpt.js";const o=()=>r.jsx(e,{children:r.jsx("div",{children:"Pink Lemonade Merch only available to purchase at events"})}),i=o;export{i as default};
